@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" modified="2024-02-16T04:16:38.981Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0" etag="iRe3P-C540QP5w6Y6zMb" version="23.1.5" type="device" pages="5">
+  <diagram name="Homepage" id="-2Uz4xoLv5xEsXEdWfDV">
+    <mxGraphModel dx="1042" dy="1669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-28" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="60" y="-980" width="690" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-14" value="" style="group" parent="ritLoyQ1nAFYVjHpgi1Y-28" vertex="1" connectable="0">
+          <mxGeometry y="160" width="390" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-1" value="Homepage" style="rounded=1;whiteSpace=wrap;html=1;arcSize=7;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry width="390" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-2" value="" style="rounded=1;whiteSpace=wrap;html=1;align=center;arcSize=7;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="16.027397260273972" y="10.196078431372548" width="357.94520547945206" height="50.98039215686274" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-3" value="Homepage" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="21.36986301369863" y="20.392156862745097" width="64.10958904109589" height="30.588235294117645" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-4" value="Entrees" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="90.82191780821918" y="20.392156862745097" width="64.10958904109589" height="30.588235294117645" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-6" value="Specialties" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="157.6027397260274" y="20.392156862745097" width="64.10958904109589" height="30.588235294117645" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-7" value="Deals" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="224.38356164383563" y="20.392156862745097" width="64.10958904109589" height="30.588235294117645" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-8" value="About" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="293.83561643835617" y="20.392156862745097" width="64.10958904109589" height="30.588235294117645" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-24" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="ritLoyQ1nAFYVjHpgi1Y-14" source="ritLoyQ1nAFYVjHpgi1Y-9" target="ritLoyQ1nAFYVjHpgi1Y-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-9" value="Nav Bar" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="145.58219178082192" y="10.196078431372548" width="98.83561643835617" height="10.196078431372548" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-10" value="Ads" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="21.36986301369863" y="76.47058823529412" width="74.79452054794521" height="173.33333333333331" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-11" value="Hours of operation" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="304.5205479452055" y="76.47058823529412" width="64.10958904109589" height="173.33333333333331" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-12" value="Promotional Items:&lt;br&gt;These items are rotate based on supply and demand of the seasons.&lt;br&gt;&lt;br&gt;Combos:&lt;br&gt;Here we will also put combo meals similar to the menu at Epic Wings" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="106.84931506849315" y="76.47058823529412" width="186.986301369863" height="173.33333333333331" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-13" value="Homepage" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="ritLoyQ1nAFYVjHpgi1Y-14" vertex="1">
+          <mxGeometry x="154.93150684931507" y="56.07843137254902" width="80.13698630136987" height="20.392156862745097" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-16" value="Entrees" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-28" vertex="1">
+          <mxGeometry x="400" y="184" width="80" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-17" value="Specialties" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-28" vertex="1">
+          <mxGeometry x="450" y="272" width="80" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-18" value="Deals" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-28" vertex="1">
+          <mxGeometry x="530" y="184" width="80" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-19" value="About" style="rounded=1;whiteSpace=wrap;html=1;" parent="ritLoyQ1nAFYVjHpgi1Y-28" vertex="1">
+          <mxGeometry x="610" y="272" width="80" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-22" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="ritLoyQ1nAFYVjHpgi1Y-28" source="ritLoyQ1nAFYVjHpgi1Y-4" target="ritLoyQ1nAFYVjHpgi1Y-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="140" as="sourcePoint" />
+            <mxPoint x="440" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="90" />
+              <mxPoint x="440" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-23" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="ritLoyQ1nAFYVjHpgi1Y-28" source="ritLoyQ1nAFYVjHpgi1Y-6" target="ritLoyQ1nAFYVjHpgi1Y-17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="193" y="150" as="sourcePoint" />
+            <mxPoint x="510" y="154" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="60" />
+              <mxPoint x="500" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-26" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="ritLoyQ1nAFYVjHpgi1Y-28" source="ritLoyQ1nAFYVjHpgi1Y-7" target="ritLoyQ1nAFYVjHpgi1Y-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="253" y="156" as="sourcePoint" />
+            <mxPoint x="570" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="70" />
+              <mxPoint x="410" />
+              <mxPoint x="550" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ritLoyQ1nAFYVjHpgi1Y-27" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="ritLoyQ1nAFYVjHpgi1Y-28" source="ritLoyQ1nAFYVjHpgi1Y-8" target="ritLoyQ1nAFYVjHpgi1Y-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="180" as="sourcePoint" />
+            <mxPoint x="620" y="272" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="60" />
+              <mxPoint x="640" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pyK3jYWYq1hpXBXb8Vyi" name="Entrees">
+    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4oqRE2kprmeUy4Gw8Zbm" name="Specialties">
+    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="IEau3U8rDDn6u0FyuPS6" name="Deals">
+    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2Yk2l9WQFn7_urWk1sff" name="About">
+    <mxGraphModel dx="1042" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
