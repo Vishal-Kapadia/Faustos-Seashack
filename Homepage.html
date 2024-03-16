@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-A-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+    <title>Homepage</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-5">
+            <a href="#Homepage" class="navbar-brand text-primary">Fausto's Seashack</a>
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#Entrees" class="nav-link text-primary">Entrees</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Specialties" class="nav-link text-primary">Specialties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Deals" class="nav-link text-primary">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#About" class="nav-link text-primary">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Banner -->
+    <section class="bg-dark text-primary p-4 text-center">
+        <div class="container">
+            <div>
+                <div>
+                    <h1>Welcome to Fausto's Seashack!</h1>
+                    <h4>Check out what we have to offer below!</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 3 boxes-->
+
+    <section class="p-4">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md">
+                    <div class="card bg-light text-dark pb-2">
+                        <div class="card-body text-center">
+                            <h1 class="card-title mb-3 text-warning">
+                                Daily Discounts
+                            </h1>
+                            <p class="card-text mb-3">
+                                This will list all the items that are discounted.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark pb-2">
+                        <div class="card-body text-center">
+                            <h1 class="card-title mb-3 text-warning text-wrap">
+                                Promotional Items
+                            </h1>
+                            <p class="card-text">
+                                This will list all the items that we think customers should try out this season.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark pb-2">
+                        <div class="card-body text-center">
+                            <h1 class="card-title mb-3 text-warning">
+                                Hours of Operation
+                            </h1>
+                            <p class="card-text">
+                                <ul class="text-dark text-wrap">
+                                    <li class="pb-4">
+                                        Monday thru Thursday: 9AM to 8PM
+                                    </li>
+                                    <li class="pb-4">
+                                        Friday: 9AM to 6PM
+                                    </li>
+                                    <li class="mb-2">
+                                        Saturday thru Sunday: <span class="text-warning">CLOSED</span>
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cart button at bottom of page -->
+    <section class="position-absolute bottom-0 end-0 p-3">
+        <button type="button" class="btn btn-outline-danger btn-lg">Cart</button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
