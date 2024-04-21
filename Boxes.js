@@ -1,78 +1,33 @@
-import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Row } from 'react-bootstrap';
+import EntreeCard from './ItemsButtons';
+import CartButton from './AddToCart';
 
 const EntreesSection = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    //Possible add side effects here.
+    console.log('Cart items updated:', cartItems);
+  }, [cartItems]);
+
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
   return (
     <>
       <section className="p-5">
         <Container>
           <Row className="text-center">
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary" className="bg-danger">First Entree</Button>
-                  <Button variant="primary" className="bg-success">First Entree-Vegan</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary" className="bg-danger">Second Entree</Button>
-                  <Button variant="primary" className="bg-success">Second Entree-Vegan</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary" className="bg-danger">Third Entree</Button>
-                  <Button variant="primary" className="bg-success">Third Entree-Vegan</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary" className="bg-danger">Fourth Entree</Button>
-                  <Button variant="primary" className="bg-success">Fourth Entree-Vegan</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary" className="bg-danger">Fifth Entree</Button>
-                  <Button variant="primary" className="bg-success">Fifth Entree-Vegan</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary" className="bg-danger">Sixth Entree</Button>
-                  <Button variant="primary" className="bg-success">Sixth Entree-Vegan</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary" className="bg-danger">Seventh Entree</Button>
-                  <Button variant="primary" className="bg-success">Seventh Entree-Vegan</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            {/* Repeat the structure for the other entrees */}
-            {/* ... */}
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary" className="bg-danger">Eighth Entree</Button>
-                  <Button variant="primary" className="bg-success">Eighth Entree-Vegan</Button>
-                </Card.Body>
-              </Card>
-            </Col>
+            <EntreeCard title="Vasual's Special Spaggetti" variant1="bg-danger" variant2="bg-success" imageSrc="https://th.bing.com/th/id/OIP.EMfqwNyLR4Jw0Y3UyEfsJQAAAA?rs=1&pid=ImgDetMain" buttonSize="lg"/>
+            <EntreeCard title="Large Salad" variant1="bg-danger" variant2="bg-success" imageSrc="https://th.bing.com/th/id/OIP.EMfqwNyLR4Jw0Y3UyEfsJQAAAA?rs=1&pid=ImgDetMain" buttonSize="lg"/>
+            <EntreeCard title="Fausto's Yummy Pizza" variant1="bg-danger" variant2="bg-success" imageSrc="https://th.bing.com/th/id/OIP.EMfqwNyLR4Jw0Y3UyEfsJQAAAA?rs=1&pid=ImgDetMain" buttonSize="lg"/>
+            <EntreeCard title="Sea Burritto" variant1="bg-danger" variant2="bg-success" imageSrc="https://th.bing.com/th/id/OIP.EMfqwNyLR4Jw0Y3UyEfsJQAAAA?rs=1&pid=ImgDetMain" buttonSize="lg"/>
+            <EntreeCard title="Nick's GOATed Burger" variant1="bg-danger" variant2="bg-success" imageSrc="https://th.bing.com/th/id/OIP.EMfqwNyLR4Jw0Y3UyEfsJQAAAA?rs=1&pid=ImgDetMain" buttonSize="lg"/>
+            <EntreeCard title="THE Burritto" variant1="bg-danger" variant2="bg-success" imageSrc="https://th.bing.com/th/id/OIP.EMfqwNyLR4Jw0Y3UyEfsJQAAAA?rs=1&pid=ImgDetMain" buttonSize="lg"/>
+            <EntreeCard title="Fire Wings" variant1="bg-danger" variant2="bg-success" imageSrc="https://th.bing.com/th/id/OIP.EMfqwNyLR4Jw0Y3UyEfsJQAAAA?rs=1&pid=ImgDetMain" buttonSize="lg"/>
+            <EntreeCard title="Chef's Mess" variant1="bg-danger" variant2="bg-success" imageSrc="https://th.bing.com/th/id/OIP.EMfqwNyLR4Jw0Y3UyEfsJQAAAA?rs=1&pid=ImgDetMain" buttonSize="lg"/>
+
           </Row>
         </Container>
       </section>
@@ -81,13 +36,7 @@ const EntreesSection = () => {
       <section className="p-5">
         <Container>
           <Row className="text-center">
-            <Col md>
-              <Card className="bg-dark text-light">
-                <Card.Body className="text-center">
-                  <Button variant="primary">Cart</Button>
-                </Card.Body>
-              </Card>
-            </Col>
+            <CartButton />
           </Row>
         </Container>
       </section>
