@@ -2,6 +2,7 @@
 import NavbarGo from '../components/Navbar'
 import EntreesSection from '../components/Entrees'
 import EntreesBoxes from '../components/Boxes'
+import Footerbox from '../components/Footer'
 //import Note from "../components/Note"
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
       <NavbarGo />
       <EntreesSection/>
       <EntreesBoxes/>
+      <Footerbox />
     </div>
   );
 }
