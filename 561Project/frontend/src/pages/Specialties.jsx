@@ -4,7 +4,7 @@ import EntreesSection from '../components/Entrees'
 import EntreesBoxes from '../components/Boxes'
 //import Note from "../components/Note"
 
-function Entrees() {
+function Specialties() {
 
   // const url = "http://127.0.0.1:8000/" + 'api/cars/';
 
@@ -17,4 +17,4 @@ function Entrees() {
   );
 }
 
-export default Entrees;
+export default Specialties;

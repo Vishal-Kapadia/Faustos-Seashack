@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import api from "../api";
 import Note from "../components/Note"
+import NavbarGo from '../components/Navbar'
+
 import "../styles/Cart.css"
 
 function Cart() {
