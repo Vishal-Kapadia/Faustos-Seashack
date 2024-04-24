@@ -40,6 +40,7 @@ function App() {
         <Route path="/login" element={<Login />} />    {/*Anything here is veiwable to all*/}
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<RegisterAndLogout />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/entrees" element={<Entrees />} />
         <Route path="/mycart" element={<MyCart />} />
         <Route path="/deals" element={<Deals />} />
