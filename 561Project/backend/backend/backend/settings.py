@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "api",
+    "food",
     "rest_framework",
     "corsheaders",
 #    "corsheaders.middleware.CorsMiddleware",

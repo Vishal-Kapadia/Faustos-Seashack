@@ -12,12 +12,12 @@ import Deals from "./pages/Deals"
 import Specialties from "./pages/Specialties"
 import Home from "./pages/Home"
 import About from "./pages/About"
-
+import Thankyouorder from "./pages/Thankyouorder"
 
 
 function Logout() {
   localStorage.clear()
-  return <Navigate to="/login" />
+  return <Navigate to="/" />
 }
 function RegisterAndLogout() {   //When registering make sure all old access tokens are taken out
   localStorage.clear()
@@ -30,10 +30,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/MyCart"
           element={             //Anyting Here can not be seen be users who are not logged in
             <ProtectedRoute>
-              <Cart />             
+              <MyCart />             
             </ProtectedRoute>
           }
         />                
@@ -45,7 +45,9 @@ function App() {
         <Route path="/deals" element={<Deals />} />
         <Route path="/specialties" element={<Specialties />} />
         <Route path="/about" element={<About />} />
-
+        <Route path="/home" element={<Home />} />
+        <Route path="/thankyouorder" element={<Thankyouorder />} />
+        <Route path="/"element={<Home />} />
         <Route path="*" element={<NotFound />}></Route>   {/*Anything else will rediret to this page*/}
       </Routes>
     </BrowserRouter>

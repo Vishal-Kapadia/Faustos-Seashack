@@ -14,6 +14,9 @@ urlpatterns = [
     path("home/", CreateUserView.as_view(), name="home"),
     path("specialties/", CreateUserView.as_view(), name="specialties"),
     path("about/", CreateUserView.as_view(), name="about"),
-    
+    path("thankyouorder/", CreateUserView.as_view(), name="thankyouorder"),
+
     path("api/", include("api.urls")),
+    path("Food/", include("food.urls")),
+
 ]
