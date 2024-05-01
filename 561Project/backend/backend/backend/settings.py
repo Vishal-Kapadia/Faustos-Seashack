@@ -79,6 +79,8 @@ MIDDLEWARE = [
 
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
@@ -105,12 +107,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Vishal',
-        'USER': 'vkapadia6944@sdsu.edu',
-        'PASSWORD': 'Batman!24',
-        'HOST': 'localhost',  # Or your MySQL server's IP address
-        'PORT': '3306',       # MySQL default port
+        'ENGINE': 'django.db.backends.sqlite3',
+        "NAME": "mydatabase",
     }
 }
 

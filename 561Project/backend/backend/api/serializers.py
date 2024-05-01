@@ -3,6 +3,9 @@ from rest_framework import serializers
 from .models import Note
 from .models import CartItem
 from .models import FoodItem
+from .models import SpecialItem
+from .models import DealsItem
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -40,3 +43,13 @@ class FoodItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = FoodItem
         fields = ['id', 'name', 'description', 'price', 'image']
+
+class SpecialItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SpecialItem
+        fields = ['id', 'name', 'description', 'price']
+
+class DealsItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = DealsItem
+        fields = ['id', 'name', 'description', 'price']

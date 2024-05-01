@@ -12,8 +12,8 @@ from rest_framework import status
 from .models import Food
 from .serializers import FoodSerializer
 from rest_framework import viewsets
-from .models import FoodItem
-from .serializers import FoodItemSerializer
+from .models import FoodItem, DealsItem, SpecialItem
+from .serializers import FoodItemSerializer, SpecialItemSerializer, DealsItemSerializer
 
 class NoteListCreate(generics.ListCreateAPIView):
     serializer_class = NoteSerializer
@@ -89,4 +89,14 @@ class FoodList(generics.ListCreateAPIView):
 class FoodItemViewSet(viewsets.ModelViewSet):
     queryset = FoodItem.objects.all()
     serializer_class = FoodItemSerializer
+    permission_classes = [AllowAny]  # Allow access to anyone
+
+class SpecialItemViewSet(viewsets.ModelViewSet):
+    queryset = SpecialItem.objects.all()
+    serializer_class = SpecialItemSerializer
+    permission_classes = [AllowAny]  # Allow access to anyone
+
+class DealsItemViewSet(viewsets.ModelViewSet):
+    queryset = DealsItem.objects.all()
+    serializer_class = DealsItemSerializer
     permission_classes = [AllowAny]  # Allow access to anyone
