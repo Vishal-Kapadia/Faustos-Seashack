@@ -28,6 +28,17 @@ class CartItem(models.Model):
     def __str__(self):
         return f"{self.quantity} x {self.food.title} in cart"
     
+
+class FoodItem(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.TextField()
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    image = models.URLField()
+
+    def __str__(self):
+        return self.name
+
+
 '''
 # Preset food models
 food1 = Food.objects.create(title="Vishals Special Spaghetti", course="Main Course", price=15.99)

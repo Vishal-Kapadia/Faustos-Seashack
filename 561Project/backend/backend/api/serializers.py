@@ -2,6 +2,7 @@ from django.contrib.auth.models import User
 from rest_framework import serializers
 from .models import Note
 from .models import CartItem
+from .models import FoodItem
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -33,3 +34,9 @@ class FoodSerializer(serializers.ModelSerializer):
         model = Food
         fields = ['id', 'title', 'course', 'price'] 
 
+from .models import FoodItem
+
+class FoodItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FoodItem
+        fields = ['id', 'name', 'description', 'price', 'image']

@@ -11,6 +11,9 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Food
 from .serializers import FoodSerializer
+from rest_framework import viewsets
+from .models import FoodItem
+from .serializers import FoodItemSerializer
 
 class NoteListCreate(generics.ListCreateAPIView):
     serializer_class = NoteSerializer
@@ -80,3 +83,10 @@ class FoodList(generics.ListCreateAPIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+class FoodItemViewSet(viewsets.ModelViewSet):
+    queryset = FoodItem.objects.all()
+    serializer_class = FoodItemSerializer
+    permission_classes = [AllowAny]  # Allow access to anyone
