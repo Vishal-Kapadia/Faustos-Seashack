@@ -1,20 +1,18 @@
-//import './App.css';
-import NavbarGo from '../components/Navbar'
-import EntreesSection from '../components/Entrees'
-import EntreesBoxes from '../components/Boxes'
-//import Note from "../components/Note"
+import React from 'react';
+import NavBarGo from '../components/Navbar';
+import Banner from '../components/Banner';
+import ThreeBoxes from '../components/ThreeBoxes';
+import AddToCart from '../components/AddToCart';
 
-function Home() {
-
-  // const url = "http://127.0.0.1:8000/" + 'api/cars/';
-
+const Home = () => {
   return (
     <div>
-      <NavbarGo />
-      <EntreesSection/>
-      <EntreesBoxes/>
+      <NavBarGo />
+      <Banner />
+      <ThreeBoxes />
+      <AddToCart />
     </div>
   );
-}
+};
 
 export default Home;

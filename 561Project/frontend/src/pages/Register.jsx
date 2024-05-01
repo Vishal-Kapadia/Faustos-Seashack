@@ -1,7 +1,9 @@
 import Form from "../components/Forms"
+import NavBarGo from '../components/Navbar';
 
 function Register() {
-    return <Form route="/api/user/register/" method="register" />
-}
+    <NavBarGo />
 
+    return <Form route="/api/user/register/" method="Create Account" />
+}
 export default Register

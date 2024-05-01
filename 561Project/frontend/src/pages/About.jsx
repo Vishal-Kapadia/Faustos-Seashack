@@ -1,20 +1,20 @@
-//import './App.css';
-import NavbarGo from '../components/Navbar'
-import EntreesSection from '../components/Entrees'
-import EntreesBoxes from '../components/Boxes'
-//import Note from "../components/Note"
+import React from 'react';
+import NavBarGo from '../components/Navbar';
+import AboutUs from '../components/AboutUs';
+import OurValues from '../components/OurValues';
+import AddToCart from '../components/AddToCart.jsx';
 
-function About() {
-
-  // const url = "http://127.0.0.1:8000/" + 'api/cars/';
-
+const About = () => {
   return (
     <div>
-      <NavbarGo />
-      <EntreesSection/>
-      <EntreesBoxes/>
+      <NavBarGo />
+      <AboutUs />
+      <OurValues />
+      <AddToCart />
     </div>
   );
-}
+};
 
 export default About;
+
+
