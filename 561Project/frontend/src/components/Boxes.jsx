@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import axios from 'axios';
 
 const EntreesSection = () => {
     const [foodItems, setFoodItems] = useState([]);
+    const [cart, setCart] = useState([]);
+    const [addedToCart, setAddedToCart] = useState({}); // Use an object to track added items
 
     useEffect(() => {
         fetchFoodItems();
+        loadCartFromStorage(); // Load cart from localStorage on component mount
     }, []);
-    <h>TESTING</h> 
+
     const fetchFoodItems = async () => {
         try {
             const response = await axios.get('http://localhost:8000/api/api/fooditems/');
@@ -16,6 +19,23 @@ const EntreesSection = () => {
         } catch (error) {
             console.error('Error fetching food items:', error);
         }
+    };
+
+    const addToCart = (item) => {
+        const updatedCart = [...cart, item];
+        setCart(updatedCart);
+        setAddedToCart({ ...addedToCart, [item.id]: true }); // Update addedToCart object
+        saveCartToStorage(updatedCart); // Save updated cart to localStorage
+        setTimeout(() => setAddedToCart({ ...addedToCart, [item.id]: false }), 3000);
+    };
+
+    const saveCartToStorage = (cartData) => {
+        localStorage.setItem('cart', JSON.stringify(cartData));
+    };
+
+    const loadCartFromStorage = () => {
+        const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+        setCart(storedCart);
     };
 
     return (
@@ -29,7 +49,8 @@ const EntreesSection = () => {
                                     <h3>{item.name}</h3>
                                     <p>{item.description}</p>
                                     <img src={item.image} alt={item.name} style={{ maxWidth: '100%', height: 'auto' }} />
-                                    <button className="btn btn-success">{item.price}</button>
+                                    <Button variant="success" onClick={() => addToCart(item)}>Add to Cart</Button>
+                                    {addedToCart[item.id] && <p>Added to cart</p>}
                                 </div>
                             </Col>
                         ))}

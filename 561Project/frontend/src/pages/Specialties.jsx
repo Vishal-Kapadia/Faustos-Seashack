@@ -9,7 +9,7 @@ import AddToCart from '../components/AddToCart';
 const FaustosSeashack = () => {
   const [specialItems, setSpecialItems] = useState([]);
   const [cart, setCart] = useState([]);
-  const [addedToCart, setAddedToCart] = useState(false);
+  const [addedToCart, setAddedToCart] = useState({}); // Use an object to track added items
 
   useEffect(() => {
     fetchSpecialItems();
@@ -28,9 +28,9 @@ const FaustosSeashack = () => {
   const addToCart = (item) => {
     const updatedCart = [...cart, item];
     setCart(updatedCart);
-    setAddedToCart(true);
+    setAddedToCart({ ...addedToCart, [item.id]: true }); // Update addedToCart object
     saveCartToStorage(updatedCart); // Save updated cart to localStorage
-    setTimeout(() => setAddedToCart(false), 3000);
+    setTimeout(() => setAddedToCart({ ...addedToCart, [item.id]: false }), 3000);
   };
 
   const saveCartToStorage = (cartData) => {
@@ -64,7 +64,7 @@ const FaustosSeashack = () => {
                     <Card.Title className="mb-3 text-center">{item.name}</Card.Title>
                     <Card.Text>{item.description}</Card.Text>
                     <Button variant="success" onClick={() => addToCart(item)}>Add to Cart</Button>
-                    {addedToCart && <Alert variant="success" className="mt-3">Added to cart</Alert>}
+                    {addedToCart[item.id] && <Alert variant="success" className="mt-3">Added to cart</Alert>}
                   </Card.Body>
                 </Card>
               </div>

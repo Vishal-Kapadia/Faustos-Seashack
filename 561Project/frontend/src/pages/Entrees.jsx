@@ -2,6 +2,8 @@
 import NavbarGo from '../components/Navbar'
 import EntreesSection from '../components/Entrees'
 import EntreesBoxes from '../components/Boxes'
+import AddToCart from '../components/AddToCart'
+
 //import Note from "../components/Note"
 
 function Entrees() {
@@ -13,6 +15,7 @@ function Entrees() {
       <NavbarGo />
       <EntreesSection/>
       <EntreesBoxes/>
+      <AddToCart />
     </div>
   );
 }

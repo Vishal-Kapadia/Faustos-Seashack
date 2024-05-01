@@ -5,9 +5,29 @@ import AddToCart from '../components/AddToCart';
 
 const DealsPage = () => {
     const [dealsItems, setDealsItems] = useState([]);
+    const [cart, setCart] = useState([]);
+    const [addedToCart, setAddedToCart] = useState({}); // Use an object to track added items
+
+    const addToCart = (item) => {
+        const updatedCart = [...cart, item];
+        setCart(updatedCart);
+        setAddedToCart({ ...addedToCart, [item.id]: true }); // Update addedToCart object
+        saveCartToStorage(updatedCart); // Save updated cart to localStorage
+        setTimeout(() => setAddedToCart({ ...addedToCart, [item.id]: false }), 3000);
+    };
+
+    const saveCartToStorage = (cartData) => {
+        localStorage.setItem('cart', JSON.stringify(cartData));
+    };
+
+    const loadCartFromStorage = () => {
+        const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+        setCart(storedCart);
+    };
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/api/dealsitems/')  // Update the URL as needed
+        loadCartFromStorage(); // Load cart from localStorage on component mount
+        fetch('http://localhost:8000/api/api/dealsitems/') // Update the URL as needed
             .then(response => response.json())
             .then(data => setDealsItems(data))
             .catch(error => console.error('Error fetching data:', error));
@@ -29,7 +49,7 @@ const DealsPage = () => {
                     <div key={item.id} className="card-body text-center">
                         <p className="font-weight-bold">{item.name}</p>
                         <p className="text-justify">{item.description}</p>
-                        <button className="btn btn-success">{item.price}</button>
+                        <button className="btn btn-success" onClick={() => addToCart(item)}>Add to Cart</button> {/* Add onClick handler */}
                     </div>
                 ))}
             </div>

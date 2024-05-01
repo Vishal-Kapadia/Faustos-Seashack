@@ -18,6 +18,12 @@ const MyCart = () => {
     localStorage.removeItem('cart');
   };
 
+  const handleDeleteItem = (index) => {
+    const updatedCart = cart.filter((item, idx) => idx !== index);
+    setCart(updatedCart);
+    localStorage.setItem('cart', JSON.stringify(updatedCart)); // Update localStorage after item deletion
+  };
+
   // Calculate total price of items in cart
   const totalPrice = cart.reduce((total, item) => {
     const itemPrice = parseFloat(item.price); // Convert price to float
@@ -49,6 +55,7 @@ const MyCart = () => {
                   <th>Name</th>
                   <th>Description</th>
                   <th>Price</th>
+                  <th>Action</th> {/* Added Action column for delete button */}
                 </tr>
               </thead>
               <tbody>
@@ -58,6 +65,9 @@ const MyCart = () => {
                     <td>{item.name}</td>
                     <td>{item.description}</td>
                     <td>{item.price}</td>
+                    <td>
+                      <Button variant="danger" onClick={() => handleDeleteItem(index)}>Delete</Button> {/* Delete button */}
+                    </td>
                   </tr>
                 ))}
               </tbody>
