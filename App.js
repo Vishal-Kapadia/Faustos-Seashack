@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Button, Navbar, Form, FormControl } from 'react-bootstrap'; // Import Bootstrap components
 
+// App.js
+const App = () => {
+  return (
+      <div>
+          <h1>Hello, React!</h1>
+          <p>This is a React component.</p>
+      </div>
+  );
+};
+/*
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <p>
-       <div class="container">
-    <div class="row">
-      <div class="col-md-8 offset-md-2 overlay">
-  
-        <h1 class="heading">Thank You for Your Order!</h1>
-        <p class="message">We hope you enjoy your meal!</p>
+    
+    <div>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#">My React App</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
+      <div className="container mt-4">
+        <h1>Hello, Bootstrap in React!</h1>
+        <Button variant="primary">Click me</Button>
       </div>
-    </div>
-  </div>
-
-        </p> 
-      </header>
     </div>
   );
 }
