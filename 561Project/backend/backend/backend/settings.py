@@ -105,10 +105,16 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Vishal',
+        'USER': 'vkapadia6944@sdsu.edu',
+        'PASSWORD': 'Batman!24',
+        'HOST': 'localhost',  # Or your MySQL server's IP address
+        'PORT': '3306',       # MySQL default port
     }
 }
+
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Assuming your React frontend is running on this URL
     "http://localhost:8000",
