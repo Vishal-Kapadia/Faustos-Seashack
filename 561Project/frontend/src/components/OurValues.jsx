@@ -15,7 +15,7 @@ const OurValues = () => {
             <Card>
               <Card.Body>
                 <Card.Title>Quality Ingredients</Card.Title>
-                <Card.Text>We only serve the freshest, most locally-sourced ingredients to our customers!</Card.Text>
+                <Card.Text>We only serve the freshest, most locally-sourced ingredients to our customers! We believe our customers deserve only the best seafood they can get, no matter their diets.</Card.Text>
               </Card.Body>
             </Card>
           </div>
@@ -23,7 +23,7 @@ const OurValues = () => {
             <Card>
               <Card.Body>
                 <Card.Title>Sustainability</Card.Title>
-                <Card.Text>We believe in keeping mother nature as beautiful as possible, so we do not endorse means that would damage it long-term!</Card.Text>
+                <Card.Text>We believe in keeping mother nature as beautiful as possible, so we do not endorse means that would damage it long-term! This means offering vegan and non-vegan options for all items.</Card.Text>
               </Card.Body>
             </Card>
           </div>
@@ -31,7 +31,7 @@ const OurValues = () => {
             <Card>
               <Card.Body>
                 <Card.Title>Customer Satisfaction</Card.Title>
-                <Card.Text>The customer is always our first priority!</Card.Text>
+                <Card.Text>The customer is always our first priority! Ensuring that your orders are ready quickly but expertly crafted is paramount to keeping you satisfied and hopefully, more open to vegan meals!</Card.Text>
               </Card.Body>
             </Card>
           </div>
