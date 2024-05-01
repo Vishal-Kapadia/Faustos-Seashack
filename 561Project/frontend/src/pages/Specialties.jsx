@@ -1,24 +1,46 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Container, Card, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Card, Button, Alert } from 'react-bootstrap';
 import NavbarGo from '../components/Navbar';
-import AddToCart from '../components/AddToCart';
 import axios from 'axios';
+import MyCart from './MyCart';
+import AddToCart from '../components/AddToCart';
 
 const FaustosSeashack = () => {
   const [specialItems, setSpecialItems] = useState([]);
+  const [cart, setCart] = useState([]);
+  const [addedToCart, setAddedToCart] = useState(false);
 
   useEffect(() => {
     fetchSpecialItems();
-      }, []);
-      <h>TESTING</h> 
-        const fetchSpecialItems = async () => {
-      try {
-          const response = await axios.get('http://localhost:8000/api/api/specialitems/');
-          setSpecialItems(response.data);
-        } catch (error) {
+    loadCartFromStorage(); // Load cart from localStorage on component mount
+  }, []);
+
+  const fetchSpecialItems = async () => {
+    try {
+      const response = await axios.get('http://localhost:8000/api/api/specialitems/');
+      setSpecialItems(response.data);
+    } catch (error) {
       console.error('Error fetching Special items:', error);
-        }
-      };
+    }
+  };
+
+  const addToCart = (item) => {
+    const updatedCart = [...cart, item];
+    setCart(updatedCart);
+    setAddedToCart(true);
+    saveCartToStorage(updatedCart); // Save updated cart to localStorage
+    setTimeout(() => setAddedToCart(false), 3000);
+  };
+
+  const saveCartToStorage = (cartData) => {
+    localStorage.setItem('cart', JSON.stringify(cartData));
+  };
+
+  const loadCartFromStorage = () => {
+    const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+    setCart(storedCart);
+  };
 
   return (
     <>
@@ -32,7 +54,6 @@ const FaustosSeashack = () => {
         </Container>
       </section>
 
-      {/* Specialty Items */}
       <section className="p-4">
         <Container fluid>
           <div className="row text-center">
@@ -42,7 +63,8 @@ const FaustosSeashack = () => {
                   <Card.Body>
                     <Card.Title className="mb-3 text-center">{item.name}</Card.Title>
                     <Card.Text>{item.description}</Card.Text>
-                    <Card.Text>Price: ${item.price}</Card.Text>
+                    <Button variant="success" onClick={() => addToCart(item)}>Add to Cart</Button>
+                    {addedToCart && <Alert variant="success" className="mt-3">Added to cart</Alert>}
                   </Card.Body>
                 </Card>
               </div>

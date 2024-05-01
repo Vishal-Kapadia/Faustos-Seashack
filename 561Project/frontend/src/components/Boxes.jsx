@@ -8,7 +8,7 @@ const EntreesSection = () => {
     useEffect(() => {
         fetchFoodItems();
     }, []);
-    <h>TESTING</h>
+    <h>TESTING</h> 
     const fetchFoodItems = async () => {
         try {
             const response = await axios.get('http://localhost:8000/api/api/fooditems/');
@@ -29,7 +29,7 @@ const EntreesSection = () => {
                                     <h3>{item.name}</h3>
                                     <p>{item.description}</p>
                                     <img src={item.image} alt={item.name} style={{ maxWidth: '100%', height: 'auto' }} />
-                                    <p>Price: ${item.price}</p>
+                                    <button className="btn btn-success">{item.price}</button>
                                 </div>
                             </Col>
                         ))}
