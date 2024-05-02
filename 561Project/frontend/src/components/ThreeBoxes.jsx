@@ -1,50 +1,43 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 
 const ThreeBoxes = () => {
   return (
-    <section className="p-4">
-      <div className="container-fluid">
-        <div className="row text-center">
-          <div className="col-md">
-            <div className="card bg-light text-dark pb-2">
+    <section className="py-5">
+      <div className="container">
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="col">
+            <div className="card h-100 border-warning">
               <div className="card-body text-center">
-                <h1 className="card-title mb-3 text-warning">Daily Discounts</h1>
-                <p className="card-text">
-                  <ul className="text-dark text-wrap">
-                    <li className="pb-4">Fire Wings 10% off!</li>
-                    <li className="pb-4">Vishal's Special Spaghetti 15% off!</li>
-                    <li className="mb-2">THE Burrito 15% off!</li>
-                  </ul>                
-                </p>
+                <h2 className="card-title text-warning mb-4">Daily Discounts</h2>
+                <ul className="list-unstyled">
+                  <li>Fire Wings - 10% off!</li>
+                  <li>Vishal's Special Spaghetti - 15% off!</li>
+                  <li>THE Burrito - 15% off!</li>
+                </ul>                
               </div>
             </div>
           </div>
-          <div className="col-md">
-            <div className="card bg-light text-dark pb-2">
+          <div className="col">
+            <div className="card h-100 border-warning">
               <div className="card-body text-center">
-                <h1 className="card-title mb-3 text-warning text-wrap">Promotional Items</h1>
-                <p className="card-text">
-                  <ul className="text-dark text-wrap">
-                    <li className="pb-4">The delicious Clam Chowder, found in Specialties!</li>
-                    <li className="pb-4">The one, the only, for a limited time... Nick's GOATED burger in Entrees!</li>
-                    <li className="mb-2">The Iberian Paella is here only for this summer! Don't miss out in Deals!</li>
-                  </ul>
-                </p>
+                <h2 className="card-title text-warning mb-4">Promotional Items</h2>
+                <ul className="list-unstyled">
+                  <li>The delicious Clam Chowder, found in Specialties!</li>
+                  <li>The one, the only, for a limited time... Nick's GOATED burger in Entrees!</li>
+                  <li>The Iberian Paella is here only for this summer! Don't miss out in Deals!</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div className="col-md">
-            <div className="card bg-light text-dark pb-2">
+          <div className="col">
+            <div className="card h-100 border-warning">
               <div className="card-body text-center">
-                <h1 className="card-title mb-3 text-warning">Hours of Operation</h1>
-                <p className="card-text">
-                  <ul className="text-dark text-wrap">
-                    <li className="pb-4">Monday thru Thursday: 9AM to 8PM</li>
-                    <li className="pb-4">Friday thru Saturday: 9AM to 10PM</li>
-                    <li className="mb-2">Sunday: <span className="text-warning">CLOSED</span></li>
-                  </ul>
-                </p>
+                <h2 className="card-title text-warning mb-4">Hours of Operation</h2>
+                <ul className="list-unstyled">
+                  <li>Monday thru Thursday: 9AM to 8PM</li>
+                  <li>Friday thru Saturday: 9AM to 10PM</li>
+                  <li>Sunday: <span className="text-warning">CLOSED</span></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -55,3 +48,5 @@ const ThreeBoxes = () => {
 };
 
 export default ThreeBoxes;
+
+
