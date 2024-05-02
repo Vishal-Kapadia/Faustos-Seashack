@@ -45,10 +45,11 @@ const EntreesSection = () => {
                     <Row className="text-center">
                         {foodItems.map(item => (
                             <Col key={item.id} lg={3} className="mb-3">
-                                <div>
-                                    <h3>{item.name}</h3>
-                                    <p>{item.description}</p>
-                                    <img src={item.image} alt={item.name} style={{ maxWidth: '100%', height: 'auto' }} />
+                                <div className="d-flex flex-column h-100">
+                                    <div className="mb-auto"> {/* Pushes content to top */}
+                                        <h3>{item.name}</h3>
+                                        <p>{item.description}</p>
+                                    </div>
                                     <Button variant="success" onClick={() => addToCart(item)}>Add to Cart</Button>
                                     {addedToCart[item.id] && <p>Added to cart</p>}
                                 </div>
