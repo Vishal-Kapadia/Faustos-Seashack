@@ -58,7 +58,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "api",
-    "food",
     "rest_framework",
     "corsheaders",
 #    "corsheaders.middleware.CorsMiddleware",
@@ -105,16 +104,16 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
+DATABASES = { #We are using MySQL for our database
+    'default':{
         'ENGINE': 'django.db.backends.sqlite3',
         "NAME": "mydatabase",
     }
 }
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Assuming your React frontend is running on this URL
+CORS_ALLOWED_ORIGINS = [ #Allow frontend access to our backend api
+    "http://localhost:5173",  
     "http://localhost:8000",
 ]
 
