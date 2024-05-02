@@ -13,7 +13,7 @@ const ThreeBoxes = () => {
                 <p className="card-text">
                   <ul className="text-dark text-wrap">
                     <li className="pb-4">Fire Wings 10% off!</li>
-                    <li className="pb-4">Vasual's Special Spaghetti 15% off!</li>
+                    <li className="pb-4">Vishal's Special Spaghetti 15% off!</li>
                     <li className="mb-2">THE Burrito 15% off!</li>
                   </ul>                
                 </p>
