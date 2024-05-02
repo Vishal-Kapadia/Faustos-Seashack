@@ -46,9 +46,10 @@ const EntreesSection = () => {
                         {foodItems.map(item => (
                             <Col key={item.id} lg={3} className="mb-3">
                                 <div className="d-flex flex-column h-100">
-                                    <div className="mb-auto"> {/* Pushes content to top */}
+                                    <div className="mb-auto"> 
                                         <h3>{item.name}</h3>
                                         <p>{item.description}</p>
+                                        <img src={item.image} alt={item.name} style={{ maxWidth: '100%', height: 'auto' }} />
                                     </div>
                                     <Button variant="success" onClick={() => addToCart(item)}>Add to Cart</Button>
                                     {addedToCart[item.id] && <p>Added to cart</p>}

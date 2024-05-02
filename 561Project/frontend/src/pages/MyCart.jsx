@@ -55,7 +55,7 @@ const MyCart = () => {
                   <th>Name</th>
                   <th>Description</th>
                   <th>Price</th>
-                  <th>Action</th> {/* Added Action column for delete button */}
+                  <th>Action</th> 
                 </tr>
               </thead>
               <tbody>
