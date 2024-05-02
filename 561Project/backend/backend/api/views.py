@@ -4,13 +4,9 @@ from rest_framework import generics
 from .serializers import UserSerializer , NoteSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Note
-from .models import CartItem
-from .serializers import CartItemSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import Food
-from .serializers import FoodSerializer
 from rest_framework import viewsets
 from .models import FoodItem, DealsItem, SpecialItem
 from .serializers import FoodItemSerializer, SpecialItemSerializer, DealsItemSerializer
@@ -43,13 +39,6 @@ class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
-
-class CartItemList(generics.ListAPIView):
-    serializer_class = CartItemSerializer
-    permission_classes = [IsAuthenticated]
-
-    def get_queryset(self):
-        user = self.request.user
 
 class NoteListCreate(generics.ListCreateAPIView):
     serializer_class = NoteSerializer
