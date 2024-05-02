@@ -3,7 +3,7 @@ from django.urls import path, include
 from api.views import CreateUserView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-urlpatterns = [
+urlpatterns = [ #urls connected to frontend
     path("admin/", admin.site.urls),
     path("api/user/register/", CreateUserView.as_view(), name="register"),
     path("api/token/", TokenObtainPairView.as_view(), name="get_token"),
@@ -17,6 +17,5 @@ urlpatterns = [
     path("thankyouorder/", CreateUserView.as_view(), name="thankyouorder"),
 
     path("api/", include("api.urls")),
-    path("Food/", include("food.urls")),
 
 ]
