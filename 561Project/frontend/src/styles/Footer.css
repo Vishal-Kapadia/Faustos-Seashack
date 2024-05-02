@@ -3,10 +3,12 @@
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 10px 0; /* Decreased padding */
+  padding: 10px 0; 
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding-top: 20px; 
+  }
 }
 
 .container {
