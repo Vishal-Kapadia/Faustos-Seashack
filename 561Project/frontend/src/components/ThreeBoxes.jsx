@@ -13,7 +13,7 @@ const ThreeBoxes = () => {
                 <h2 className="card-title text-warning mb-4">Daily Discounts</h2>
                 <ul className="list-unstyled custom-list">
                   <li className="mb-3">Fire Wings - 10% off!</li>
-                  <li className="mb-3">Vishal's Special Spaghetti - 15% off!</li>
+                  <li className="mb-3">Fish & Chips - 15% off!</li>
                   <li className="mb-3">THE Burrito - 15% off!</li>
                 </ul>                
               </div>
