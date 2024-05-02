@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom'; // Import NavLink from react-router-dom
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import api from "../api";
+import "../styles/Navbar.css"
 
 const NavbarGo = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -27,7 +28,7 @@ const NavbarGo = () => {
             <NavLink to="/about" className="nav-link text-primary" activeClassName="active">About</NavLink>
             {!isLoggedIn && (
               <>
-                <NavLink to="/register" className="nav-link text-primary bg-success" activeClassName="activee">Create Account</NavLink>
+                <NavLink to="/register" className="nav-link text-primary" activeClassName="activee">Create Account</NavLink>
                 <NavLink to="/login" className="nav-link text-primary" activeClassName="activee">Sign In</NavLink>
               </>
             )}
