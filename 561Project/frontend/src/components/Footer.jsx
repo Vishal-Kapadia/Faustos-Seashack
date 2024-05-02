@@ -7,12 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <p>&copy; 2024 Fausto's Seashack. All rights reserved.</p>
-          <ul className="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <p>Contact for customer support: faustoseashack@gmail.com</p>
         </div>
       </div>
     </footer>

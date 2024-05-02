@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import NavBarGo from '../components/Navbar';
 import AddToCart from '../components/AddToCart';
+import Footer from '../components/Footer';
 
 const DealsPage = () => {
     const [dealsItems, setDealsItems] = useState([]);
@@ -35,6 +36,7 @@ const DealsPage = () => {
 
     return (
         <div>
+            <Footer/>
             <NavBarGo />
             <div className="container">
                 <div className="bg-dark text-primary p-4 text-center"> {/* Added Bootstrap classes for styling */}

@@ -5,6 +5,7 @@ import NavbarGo from '../components/Navbar';
 import axios from 'axios';
 import MyCart from './MyCart';
 import AddToCart from '../components/AddToCart';
+import Footer from '../components/Footer';
 
 const FaustosSeashack = () => {
   const [specialItems, setSpecialItems] = useState([]);
@@ -44,6 +45,7 @@ const FaustosSeashack = () => {
 
   return (
     <>
+      <Footer /> 
       <NavbarGo />
       <section className="bg-dark text-primary p-4 text-center">
         <Container>
