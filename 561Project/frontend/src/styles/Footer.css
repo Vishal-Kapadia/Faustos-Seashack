@@ -35,7 +35,7 @@
 
 .footer-links li {
   display: inline-block;
-  margin-right: 10px; /* Decreased margin */
+  margin-right: 10px; 
 }
 
 .footer-links li:last-child {

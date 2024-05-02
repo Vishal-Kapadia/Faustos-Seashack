@@ -10,7 +10,6 @@
 
 .overlay {
   background-color: rgba(210, 180, 140, 0.8);
-/*  padding: 20px; */ 
   border-radius: 10px; 
 }
 
@@ -18,7 +17,6 @@
   font-size: 32px;
   color: #333;
   text-align: center;
-/*  margin-bottom: 20px; */
 }
 
 .message {

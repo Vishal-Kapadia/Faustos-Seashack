@@ -9,7 +9,6 @@ const NavbarGo = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    // Login check
     const accessToken = localStorage.getItem(ACCESS_TOKEN);
     setIsLoggedIn(accessToken ? true : false);
   }, []);

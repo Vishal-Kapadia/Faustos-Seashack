@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/ThreeBoxes.css";
+import './ThreeBoxes'
 
 const ThreeBoxes = () => {
   return (
