@@ -49,7 +49,6 @@ const EntreesSection = () => {
                                     <div className="mb-auto"> 
                                         <h3>{item.name}</h3>
                                         <p>{item.description}</p>
-                                        <img src={item.image} alt={item.name} style={{ maxWidth: '100%', height: 'auto' }} />
                                     </div>
                                     <Button variant="success" onClick={() => addToCart(item)}>Add to Cart</Button>
                                     {addedToCart[item.id] && <p>Added to cart</p>}
