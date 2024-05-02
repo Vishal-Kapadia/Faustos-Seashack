@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #fff; 
+    color: #333;
+    border-bottom: 2px solid #ddd; 
+  }
+  
+  .nav-link {
+    margin-right: 10px; 
+    font-weight: bold; 
+  }
+  
+  .nav-link:hover {
+    color: #007bff; 
+  }
+  
+  .active {
+    color: #007bff; 
+  }
+  
+  .activee {
+    background-color: #007bff; 
+    color: #fff;
+  }
